@@ -6,7 +6,7 @@ import { Canvas, InteractiveObject, OrbitControls, T } from '@threlte/core'
     let val1 = 1
     let val2 = 1
     let val3 = 1
-    $: scale = [val1, val2, val3]
+    $: scale = [val1/10, val2/10, val3/10]
 
 
     let rackItems = [1,2,2,1,1,2,1,1]
@@ -40,17 +40,17 @@ import { Canvas, InteractiveObject, OrbitControls, T } from '@threlte/core'
     <div class="slider-input">
         <span>X</span>
         <input type="range" min="0" max="10" bind:value={val1}>
-        <span>{val1}</span>
+        <span>{val1/10}</span>
     </div>
     <div class="slider-input">
         <span>X</span>
         <input type="range" min="0" max="10" bind:value={val2}>
-        <span>{val2}</span>
+        <span>{val2/10}</span>
     </div>
     <div class="slider-input">
         <span>X</span>
         <input type="range" min="0" max="10" bind:value={val3}>
-        <span>{val3}</span>
+        <span>{val3/10}</span>
     </div>
     
 </div>
